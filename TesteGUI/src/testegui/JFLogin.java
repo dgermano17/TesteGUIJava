@@ -143,7 +143,6 @@ public class JFLogin extends javax.swing.JFrame {
         String senhaUsuario = txtSenha.getText();
         
         if(nomeUsuario.equals("etecia")&& senhaUsuario.equals("etecia")){
-            JOptionPane.showMessageDialog(null,"Bem-Vindo");
             JFMenuPrincipal abrir = new JFMenuPrincipal();
             abrir.setVisible(true);
             this.setVisible(false);
