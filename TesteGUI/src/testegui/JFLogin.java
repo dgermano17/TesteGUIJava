@@ -5,6 +5,8 @@
  */
 package testegui;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author LABORATORIO_INFO
@@ -63,6 +65,11 @@ public class JFLogin extends javax.swing.JFrame {
         btnEntrar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnEntrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testegui/imagens/loginbtnenter.png"))); // NOI18N
         btnEntrar.setText("Entrar");
+        btnEntrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnEntrarActionPerformed(evt);
+            }
+        });
 
         btnSair.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         btnSair.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testegui/imagens/loginbtnexit.png"))); // NOI18N
@@ -129,6 +136,21 @@ public class JFLogin extends javax.swing.JFrame {
     private void btnSairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSairActionPerformed
         System.exit(0);
     }//GEN-LAST:event_btnSairActionPerformed
+
+    private void btnEntrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEntrarActionPerformed
+        // TODO add your handling code here:
+        String nomeUsuario = txtUsuario.getText();
+        String senhaUsuario = txtSenha.getText();
+        
+        if(nomeUsuario.equals("etecia")&& senhaUsuario.equals("etecia")){
+            JOptionPane.showMessageDialog(null,"Bem-Vindo");
+            JFMenuPrincipal abrir = new JFMenuPrincipal();
+            abrir.setVisible(true);
+            this.setVisible(false);
+        }else{
+            JOptionPane.showMessageDialog(null, "Usuário ou senha incorretos. Tente novamente.");
+        };
+    }//GEN-LAST:event_btnEntrarActionPerformed
 
     /**
      * @param args the command line arguments
