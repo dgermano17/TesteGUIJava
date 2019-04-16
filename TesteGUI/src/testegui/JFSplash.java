@@ -26,19 +26,31 @@ public class JFSplash extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        lblSpash = new javax.swing.JLabel();
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setPreferredSize(new java.awt.Dimension(570, 430));
         setSize(new java.awt.Dimension(570, 430));
+
+        lblSpash.setFont(new java.awt.Font("Tw Cen MT", 1, 80)); // NOI18N
+        lblSpash.setForeground(new java.awt.Color(51, 51, 51));
+        lblSpash.setIcon(new javax.swing.ImageIcon(getClass().getResource("/testegui/imagens/splashImg.png"))); // NOI18N
+        lblSpash.setText("GUI");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 570, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(148, 148, 148)
+                .addComponent(lblSpash)
+                .addContainerGap(171, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 430, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(153, 153, 153)
+                .addComponent(lblSpash)
+                .addContainerGap(157, Short.MAX_VALUE))
         );
 
         pack();
@@ -75,11 +87,11 @@ public class JFSplash extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new JFSplash().setVisible(true);
-            }
-        });
+         lblSpash      });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel lblSpash;
     // End of variables declaration//GEN-END:variables
 
 }
