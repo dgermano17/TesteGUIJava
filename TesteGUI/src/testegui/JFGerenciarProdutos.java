@@ -46,9 +46,11 @@ public class JFGerenciarProdutos extends javax.swing.JFrame {
         setPreferredSize(new java.awt.Dimension(570, 430));
         setResizable(false);
         setSize(new java.awt.Dimension(570, 430));
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel3.setText("Gestão de Produtos");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(202, 11, -1, -1));
 
         jPanel1.setBackground(new java.awt.Color(215, 220, 224));
         jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -90,6 +92,8 @@ public class JFGerenciarProdutos extends javax.swing.JFrame {
                     .addComponent(btnvoltar))
                 .addGap(21, 21, 21))
         );
+
+        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 39, 550, 47));
 
         jPanel2.setBackground(new java.awt.Color(215, 220, 224));
         jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
@@ -170,36 +174,7 @@ public class JFGerenciarProdutos extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(jLabel3)
-                        .addGap(231, 231, 231))))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(123, 123, 123)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 130, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel3)
-                .addGap(11, 11, 11)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 47, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(91, Short.MAX_VALUE))
-        );
+        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

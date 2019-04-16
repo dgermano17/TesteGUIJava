@@ -28,6 +28,7 @@ public class JFMenuPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         btnvoltar = new javax.swing.JToggleButton();
+        jTextField1 = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
@@ -46,6 +47,8 @@ public class JFMenuPrincipal extends javax.swing.JFrame {
                 btnvoltarActionPerformed(evt);
             }
         });
+
+        jTextField1.setText("jTextField1");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Teste GUI - Menu");
@@ -213,7 +216,7 @@ public class JFMenuPrincipal extends javax.swing.JFrame {
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnvoltar1)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
         );
 
         pack();
@@ -316,5 +319,6 @@ public class JFMenuPrincipal extends javax.swing.JFrame {
     private javax.swing.JButton jButton8;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

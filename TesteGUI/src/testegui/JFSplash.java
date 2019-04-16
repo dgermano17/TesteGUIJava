@@ -87,7 +87,9 @@ public class JFSplash extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new JFSplash().setVisible(true);
-         lblSpash      });
+             }
+        });
+                
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
