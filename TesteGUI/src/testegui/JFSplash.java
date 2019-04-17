@@ -28,7 +28,7 @@ public class JFSplash extends javax.swing.JFrame {
 
         lblSpash = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setSize(new java.awt.Dimension(570, 430));
 
         lblSpash.setFont(new java.awt.Font("Tw Cen MT", 1, 80)); // NOI18N

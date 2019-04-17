@@ -27,11 +27,11 @@ public class JFGerenciarProdutos extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel3 = new javax.swing.JLabel();
-        jPanel1 = new javax.swing.JPanel();
+        lblGestaoProdutos = new javax.swing.JLabel();
+        painelMenu = new javax.swing.JPanel();
         btncadastros = new javax.swing.JButton();
         btnvoltar = new javax.swing.JToggleButton();
-        jPanel2 = new javax.swing.JPanel();
+        painelNovoProduto = new javax.swing.JPanel();
         lblnovoproduto = new javax.swing.JLabel();
         txtnome = new javax.swing.JTextField();
         txttipo = new javax.swing.JTextField();
@@ -42,18 +42,19 @@ public class JFGerenciarProdutos extends javax.swing.JFrame {
         lblquantidade = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
 
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setFocusCycleRoot(false);
         setPreferredSize(new java.awt.Dimension(570, 430));
         setResizable(false);
         setSize(new java.awt.Dimension(570, 430));
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel3.setText("Gestão de Produtos");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(202, 11, -1, -1));
+        lblGestaoProdutos.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        lblGestaoProdutos.setText("Gestão de Produtos");
+        getContentPane().add(lblGestaoProdutos, new org.netbeans.lib.awtextra.AbsoluteConstraints(202, 11, -1, -1));
 
-        jPanel1.setBackground(new java.awt.Color(215, 220, 224));
-        jPanel1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        painelMenu.setBackground(new java.awt.Color(215, 220, 224));
+        painelMenu.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         btncadastros.setText("Histórico de Cadastros");
         btncadastros.addActionListener(new java.awt.event.ActionListener() {
@@ -62,7 +63,6 @@ public class JFGerenciarProdutos extends javax.swing.JFrame {
             }
         });
 
-        btnvoltar.setBackground(new java.awt.Color(255, 153, 153));
         btnvoltar.setText("Voltar");
         btnvoltar.setBorderPainted(false);
         btnvoltar.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -72,31 +72,31 @@ public class JFGerenciarProdutos extends javax.swing.JFrame {
             }
         });
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
+        javax.swing.GroupLayout painelMenuLayout = new javax.swing.GroupLayout(painelMenu);
+        painelMenu.setLayout(painelMenuLayout);
+        painelMenuLayout.setHorizontalGroup(
+            painelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(painelMenuLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(btncadastros, javax.swing.GroupLayout.PREFERRED_SIZE, 144, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btncadastros, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 287, Short.MAX_VALUE)
                 .addComponent(btnvoltar)
                 .addContainerGap())
         );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+        painelMenuLayout.setVerticalGroup(
+            painelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, painelMenuLayout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(painelMenuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btncadastros)
                     .addComponent(btnvoltar))
                 .addGap(21, 21, 21))
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 39, 550, 47));
+        getContentPane().add(painelMenu, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 39, 550, 47));
 
-        jPanel2.setBackground(new java.awt.Color(215, 220, 224));
-        jPanel2.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        painelNovoProduto.setBackground(new java.awt.Color(215, 220, 224));
+        painelNovoProduto.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         lblnovoproduto.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lblnovoproduto.setText("Novo Produto:");
@@ -128,22 +128,22 @@ public class JFGerenciarProdutos extends javax.swing.JFrame {
 
         jLabel1.setText("Descrição:");
 
-        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
-        jPanel2.setLayout(jPanel2Layout);
-        jPanel2Layout.setHorizontalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        javax.swing.GroupLayout painelNovoProdutoLayout = new javax.swing.GroupLayout(painelNovoProduto);
+        painelNovoProduto.setLayout(painelNovoProdutoLayout);
+        painelNovoProdutoLayout.setHorizontalGroup(
+            painelNovoProdutoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(painelNovoProdutoLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
+                .addGroup(painelNovoProdutoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, painelNovoProdutoLayout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
                         .addComponent(btncadastrar))
                     .addComponent(jScrollPane1)
-                    .addGroup(jPanel2Layout.createSequentialGroup()
-                        .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(painelNovoProdutoLayout.createSequentialGroup()
+                        .addGroup(painelNovoProdutoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(lblnovoproduto)
                             .addComponent(txtnome, javax.swing.GroupLayout.PREFERRED_SIZE, 287, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(jPanel2Layout.createSequentialGroup()
+                            .addGroup(painelNovoProdutoLayout.createSequentialGroup()
                                 .addComponent(txttipo, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(18, 18, 18)
                                 .addComponent(lblquantidade)
@@ -153,15 +153,15 @@ public class JFGerenciarProdutos extends javax.swing.JFrame {
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
-        jPanel2Layout.setVerticalGroup(
-            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
+        painelNovoProdutoLayout.setVerticalGroup(
+            painelNovoProdutoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(painelNovoProdutoLayout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(lblnovoproduto)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtnome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(painelNovoProdutoLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(txttipo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblquantidade)
                     .addComponent(spinquantidade, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -174,7 +174,7 @@ public class JFGerenciarProdutos extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, -1, -1));
+        getContentPane().add(painelNovoProduto, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 110, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -239,12 +239,12 @@ public class JFGerenciarProdutos extends javax.swing.JFrame {
     private javax.swing.JButton btncadastros;
     private javax.swing.JToggleButton btnvoltar;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JLabel lblGestaoProdutos;
     private javax.swing.JLabel lblnovoproduto;
     private javax.swing.JLabel lblquantidade;
+    private javax.swing.JPanel painelMenu;
+    private javax.swing.JPanel painelNovoProduto;
     private javax.swing.JSpinner spinquantidade;
     private javax.swing.JTextArea txtareadescricao;
     private javax.swing.JTextField txtnome;
